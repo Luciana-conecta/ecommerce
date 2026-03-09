@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  ecommerce:
+    build: .
+    container_name: ecommerce-app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./database:/app/database
+    restart: always
