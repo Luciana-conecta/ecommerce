@@ -8,4 +8,5 @@ services:
      "8090:3000"
     volumes:
       - ./database:/app/database
+      - ./vite.config.ts:/app/vite.config.ts
     restart: always
